@@ -9,6 +9,13 @@ def to_camel_case(input_string: str) -> str:
     return "".join(new_str)
 
 
+def display_banner():
+    """ Display program name in banner """
+    msg = 'AWESOME camelCaseGenerator PROGRAM'
+    stars = '*' * len(msg)
+    print(f'\n {stars} \n {msg} \n {stars}\n')
+
+
 def check_validity(input_string: str):
     if (
         input_string[0].isdigit() or
@@ -18,6 +25,7 @@ def check_validity(input_string: str):
 
 
 if __name__ == "__main__":
+    display_banner()
     pre_case = str(input("Enter your sentence: "))
 
     post_case = to_camel_case(pre_case)
