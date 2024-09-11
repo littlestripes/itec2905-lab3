@@ -26,6 +26,7 @@ def check_validity(input_string: str):
 
 if __name__ == "__main__":
     display_banner()
+    print("Enter a sentence to convert to camel case.")
     pre_case = str(input("Enter your sentence: "))
 
     post_case = to_camel_case(pre_case)
